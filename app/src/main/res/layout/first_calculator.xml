@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstCalculator">
+
+    <LinearLayout
+        android:id="@+id/edittext_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Back"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/edittext_container"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- EditText 1 -->
+        <EditText
+            android:id="@+id/h_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="H%"
+            android:padding="12dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="30dp"/>
+
+        <!-- EditText 2 -->
+        <EditText
+            android:id="@+id/c_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C%"
+            android:padding="12dp"
+            android:backgroundTint="@color/black"/>
+
+        <!-- EditText 3 -->
+        <EditText
+            android:id="@+id/s_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="S%"
+            android:padding="12dp"
+            android:backgroundTint="@color/black"/>
+
+        <!-- EditText 4 -->
+        <EditText
+            android:id="@+id/n_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="N%"
+            android:padding="12dp"
+            android:backgroundTint="@color/black"/>
+
+        <!-- EditText 5 -->
+        <EditText
+            android:id="@+id/o_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="O%"
+            android:padding="12dp"
+            android:backgroundTint="@color/black"/>
+
+        <!-- EditText 6 -->
+        <EditText
+            android:id="@+id/w_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="W%"
+            android:padding="12dp"
+            android:backgroundTint="@color/black"/>
+
+        <!-- EditText 7 -->
+        <EditText
+            android:id="@+id/a_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A%"
+            android:padding="12dp"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:text="Сalculate"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@id/edittext_container"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Виведення -->
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
